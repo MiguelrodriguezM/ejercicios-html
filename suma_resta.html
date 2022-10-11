@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <script>
+        function suma(){
+            var numero1 = document.getElementById("n1").value;
+            var numero2 = document.getElementById("n2").value;
+            var resultado = parseInt(numero1) + parseInt(numero2);
+            document.getElementById("mensaje").innerHTML = "El resultado es: " + resultado;
+        }
+    </script>
+    <form>
+        numero1: <input id="n1" type="number" /> </br>
+        numero2: <input id="n2" type="number" /> </br>
+        <input type="button" value="Enviar" onclick="suma()"/>
+    </form>
+
+    <div id="mensaje">
+
+    </div>
+
+
+</body>
+</html>

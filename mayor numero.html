@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <script>
+        function suma(){
+            var numero1 = document.getElementById("n1").value;
+            var numero2 = document.getElementById("n2").value;
+            var numero3 = document.getElementById("n3").value;
+            if (numero1 > numero2 > numero3) var resultado1 = 7;
+            document.getElementById("mensaje").innerHTML = "El numero mas grande es: " + resultado1;
+            if (numero3 > numero2 > numero1) var resultado2 = n2;
+            document.getElementById("mensaje").innerHTML = "El numero mas grande es: " + resultado2;
+            if (numero2 > numero3 > numero1) var resultado3 = n3;
+            document.getElementById("mensaje").innerHTML = "El numero mas grande es: " + resultado3;
+        }
+    </script>
+    <form>
+        n1: <input id="n1" type="number" /> </br>
+        n2: <input id="n2" type="number" /> </br>
+        n3: <input id="n3" type="number" /> </br>
+        <input type="button" value="Enviar" onclick="suma()"/>
+    </form>
+
+    <div id="mensaje">
+
+    </div>
+
+
+</body>
+</html>
