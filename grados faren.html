@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <script>
+        function saludo(){
+            var numero1 = document.getElementById("n1").value;
+            var n2 = 1.8 * numero1;
+            var resultado = parseInt(1.8 * numero1) + 32;
+            document.getElementById("mensaje").innerHTML = "El resultado es: " + resultado;
+        }
+        
+    </script>
+    <form>
+        grados <input id="n1" type="number" /> </br>
+        <input type="button" value="Enviar" onclick="saludo()"/>
+    </form>
+
+    <div id="mensaje">
+
+    </div>
+
+
+</body>
+</html>
